@@ -1,0 +1,36 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "personal blog",
+  "keywords": [
+    "personal",
+    "blog"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-codetwista:codetwista/the8rix-blog.git"
+  },
+  "license": "ISC",
+  "author": "codetwista",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "sass --watch sass/app.scss:public/assets/css/app.css --style=expanded",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch-sass",
+    "compile:sass": "sass sass/app.scss:public/assets.css/app.comp.css",
+    "concat-css": "concat -o public/assets/css/app.concat.css public/assets/css/additional.css public/assets/css/app.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' public/assets/css/app.concat.css -o public/assets/css/app.prefix.css",
+    "minify:css": "sass --watch public/assets/css/app.prefix.css:public/assets/css/app.min.css --style=compressed",
+    "build:css": "npm-run-all compile-sass concat-css prefix-css minify-css"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.5.4",
+    "prettier": "^3.5.3"
+  }
+}
