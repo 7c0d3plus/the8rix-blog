@@ -85,13 +85,21 @@ nav .navbar__menu-item a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 2px;
   padding: 0.4rem 1.6rem;
   font-weight: 500;
   color: #fff;
+  border: 1px solid transparent;
   transition: all 0.2s ease-in;
 }
 nav .navbar__menu-item a:hover, nav .navbar__menu-item a.active {
+  border: 1px solid #ccc;
+}
+nav .navbar__menu-item a:hover {
   background-color: orange;
+}
+nav .navbar__menu-item a.active {
+  background-color: rgb(229.5, 148.5, 0);
 }
 
 .post {

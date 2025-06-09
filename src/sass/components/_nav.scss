@@ -32,14 +32,24 @@ nav {
           display: flex;
           justify-content: center;
           align-items: center;
+          margin: 0 2px;
           padding: 0.4rem 1.6rem;
           font-weight: 500;
           color: #fff;
+          border: 1px solid transparent;
           transition: all 0.2s ease-in;
 
           &:hover,
           &.active {
+            border: 1px solid #ccc;
+          }
+
+          &:hover {
             background-color: orange;
+          }
+
+          &.active {
+            background-color: darken(orange, 5);
           }
         }
       }
