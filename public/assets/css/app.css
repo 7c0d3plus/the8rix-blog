@@ -11,12 +11,58 @@ html {
 }
 
 body {
+  max-width: 96rem;
   margin: 0 auto;
-  font-family: "DM Sans", sans-serif;
+  padding-top: 8rem;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   box-sizing: border-box;
   line-height: 1.7;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: mediumpurple;
+}
+nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 96rem;
+  margin: 0 auto;
+  padding: 1.6rem 0;
+}
+nav .navbar__menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+nav .navbar__menu-item {
+  position: relative;
+}
+nav .navbar__menu-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.2s ease-in;
+}
+nav .navbar__menu-item a:hover, nav .navbar__menu-item a.active {
+  background-color: orange;
 }
 
 /*# sourceMappingURL=app.css.map */

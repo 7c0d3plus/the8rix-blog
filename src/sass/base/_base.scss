@@ -11,12 +11,20 @@ html {
 }
 
 body {
+  max-width: 96rem;
   margin: 0 auto;
-  font-family: "DM Sans", sans-serif;
+  padding-top: 8rem;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
-  //color:;
-  //background-color:;
   box-sizing: border-box;
   line-height: 1.7;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
 }
