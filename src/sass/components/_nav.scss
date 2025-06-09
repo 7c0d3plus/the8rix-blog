@@ -48,6 +48,7 @@ nav {
             background-color: orange;
           }
 
+          &:active,
           &.active {
             background-color: darken(orange, 5);
           }
