@@ -17,14 +17,18 @@ body {
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
+  color: #555;
   box-sizing: border-box;
   line-height: 1.7;
+  background-color: #f8f8f8;
 }
 
 a:link {
   text-decoration: none;
+  transition: all 0.2s ease-in;
 }
 
 img {
   display: block;
+  transition: all 0.2s ease-in;
 }

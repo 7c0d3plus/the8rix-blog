@@ -1,0 +1,17 @@
+.post {
+  &__title {
+    font-size: 2rem;
+  }
+
+  &__image,
+  &__date,
+  &__stats {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  &__category {
+    font-weight: 400;
+    color: #fff;
+  }
+}

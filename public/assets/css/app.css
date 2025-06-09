@@ -17,16 +17,32 @@ body {
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
+  color: #555;
   box-sizing: border-box;
   line-height: 1.7;
+  background-color: #f8f8f8;
 }
 
 a:link {
   text-decoration: none;
+  transition: all 0.2s ease-in;
 }
 
 img {
   display: block;
+  transition: all 0.2s ease-in;
+}
+
+.post__title {
+  font-size: 2rem;
+}
+.post__image, .post__date, .post__stats {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.post__category {
+  font-weight: 400;
+  color: #fff;
 }
 
 nav {
@@ -35,6 +51,7 @@ nav {
   left: 0;
   right: 0;
   background-color: mediumpurple;
+  z-index: 10;
 }
 nav .navbar {
   display: flex;
@@ -63,6 +80,98 @@ nav .navbar__menu-item a {
 }
 nav .navbar__menu-item a:hover, nav .navbar__menu-item a.active {
   background-color: orange;
+}
+
+.post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+  margin: 3.2rem 0;
+  padding: 3.2rem;
+  background-color: #fff;
+}
+.post__image {
+  position: relative;
+  flex: 0 0 40%;
+}
+.post__image img {
+  width: 100%;
+  height: 34.6rem;
+  object-fit: cover;
+}
+.post__overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  padding: 3.2rem;
+  background-color: rgba(225, 225, 225, 0.5);
+  pointer-events: none;
+}
+.post__overlay:hover {
+  background-color: rgba(0, 225, 225, 0.5);
+}
+.post__category {
+  position: absolute;
+  top: 3.2rem;
+  right: 3.2rem;
+  padding: 0.2rem 0.8rem;
+  border: 1px solid #fff;
+  background-color: rgba(255, 165, 0, 0.75);
+  transition: all 0.2s ease-in;
+}
+.post__category:hover {
+  background-color: rgba(255, 165, 0, 0.5);
+}
+.post__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.6rem;
+}
+.post__title a {
+  color: orange;
+}
+.post__title a:hover {
+  color: rgb(229.5, 148.5, 0);
+}
+.post__date {
+  display: flex;
+  gap: 1.6rem;
+}
+.post__body {
+  position: relative;
+  padding-bottom: 1.6rem;
+}
+.post__body::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #ccc;
+}
+.post__body a {
+  color: inherit;
+}
+.post__body a:hover {
+  color: #333;
+}
+.post__stats {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.post:hover .post__image img {
+  filter: grayscale(0.5);
+}
+.post a {
+  display: block;
 }
 
 /*# sourceMappingURL=app.css.map */
