@@ -11,6 +11,7 @@
   &__image {
     position: relative;
     flex: 0 0 40%;
+    overflow: hidden;
 
     img {
       width: 100%;
@@ -40,14 +41,14 @@
   &__category {
     position: absolute;
     top: 3.2rem;
-    right: 3.2rem;
+    left: 3.2rem;
     padding: 0.2rem 0.8rem;
-    border: 1px solid #fff;
-    background-color: rgba(orange, 0.75);
+    border: 1px solid #ccc;
+    background-color: mediumpurple;
     transition: all 0.2s ease-in;
 
     &:hover {
-      background-color: rgba(orange, 0.5);
+      background-color: rgba(mediumpurple, 0.75);
     }
   }
 
@@ -112,6 +113,7 @@
   &:hover {
     .post__image {
       img {
+        transform: scale(1.05);
         filter: grayscale(0.5);
       }
     }
