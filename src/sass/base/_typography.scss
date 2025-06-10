@@ -38,3 +38,9 @@ p {
   &__body p {
   }
 }
+
+.comment {
+  .author--name {
+    font-weight: 500;
+  }
+}

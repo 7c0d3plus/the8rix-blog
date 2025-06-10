@@ -1,0 +1,53 @@
+form {
+  font-family: inherit;
+}
+
+label {
+  display: block;
+  margin-bottom: 1.6rem;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+textarea {
+  width: 100%;
+  height: 16rem;
+  padding: 1.6rem;
+  resize: none;
+}
+
+.comment-section {
+  label {
+    display: none;
+  }
+
+  .comment {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 1.6rem;
+    padding-left: 1.6rem;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-left: 3px solid red;
+
+    &__author {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+
+      margin-bottom: 0.8rem;
+
+      .author--avatar {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background-color: pink;
+      }
+    }
+  }
+}

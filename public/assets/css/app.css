@@ -60,6 +60,10 @@ p {
   font-weight: 400;
   color: #fff;
 }
+.comment .author--name {
+  font-weight: 500;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -110,6 +114,12 @@ nav .navbar__menu-item a.active {
   pointer-events: none;
 }
 
+#posts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.2rem;
+}
+
 .post {
   display: flex;
   justify-content: center;
@@ -118,6 +128,16 @@ nav .navbar__menu-item a.active {
   margin-bottom: 3.2rem;
   padding: 3.2rem;
   background-color: #fff;
+}
+.post:last-of-type {
+  margin-bottom: 0;
+}
+.post:hover .post__image img {
+  transform: scale(1.05);
+  filter: grayscale(0.5);
+}
+.post a {
+  display: block;
 }
 .post__image {
   position: relative;
@@ -174,14 +194,6 @@ nav .navbar__menu-item a.active {
 }
 .post__body {
   position: relative;
-}
-.post__body::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
   border-bottom: 1px solid #ccc;
 }
 .post__body a {
@@ -201,24 +213,78 @@ nav .navbar__menu-item a.active {
   padding-bottom: 1.6rem;
   border-bottom: 1px solid #ccc;
 }
-.post:hover .post__image img {
+
+#post {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  background-color: #fff;
+}
+#post:hover .post__image img {
   transform: scale(1.05);
   filter: grayscale(0.5);
 }
-.post a {
-  display: block;
-}
-
-.single-post {
+#post .single-post,
+#post .comment-section {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-  padding: 3.2rem;
   background-color: #fff;
 }
-.single-post:hover .post__image img {
-  transform: scale(1.05);
-  filter: grayscale(0.5);
+#post .single-post {
+  padding: 1.6rem;
+}
+#post .comment-section {
+  padding: 1.6rem 1.6rem 0.8rem;
+}
+
+form {
+  font-family: inherit;
+}
+
+label {
+  display: block;
+  margin-bottom: 1.6rem;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea {
+  width: 100%;
+  height: 16rem;
+  padding: 1.6rem;
+  resize: none;
+}
+
+.comment-section label {
+  display: none;
+}
+.comment-section .comment {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.6rem;
+  padding-left: 1.6rem;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-left: 3px solid red;
+}
+.comment-section .comment__author {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+.comment-section .comment__author .author--avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: pink;
 }
 
 /*# sourceMappingURL=app.css.map */
