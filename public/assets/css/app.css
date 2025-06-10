@@ -198,6 +198,8 @@ nav .navbar__menu-item a.active {
 .post__date-stats {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid #ccc;
 }
 .post:hover .post__image img {
   transform: scale(1.05);

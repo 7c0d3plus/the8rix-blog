@@ -112,6 +112,9 @@
   &__date-stats {
     display: flex;
     justify-content: space-between;
+
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid #ccc;
   }
 
   &:hover {
