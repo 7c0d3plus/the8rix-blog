@@ -164,5 +164,62 @@
 
   .comment-section {
     padding: 1.6rem 1.6rem 0.8rem;
+
+    .comment,
+    .reply {
+      display: flex;
+      flex-direction: column;
+
+      margin-bottom: 1.6rem;
+      padding: 1.6rem 1.6rem 0;
+      border-radius: 8px;
+      border-top: 1px solid rgba(mediumpurple, 0.25);
+      border-right: 1px solid rgba(mediumpurple, 0.25);
+      border-bottom: 1px solid rgba(mediumpurple, 0.25);
+      border-left: 3px solid rgba(mediumpurple, 0.25);
+
+      &__author {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+
+        margin-bottom: 0.4rem;
+
+        .author--avatar {
+          width: 4rem;
+          height: 4rem;
+          margin-right: 0.4rem;
+          border-radius: 50%;
+          background-color: pink;
+        }
+      }
+
+      &__body {
+        margin-bottom: 1.6rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &__reply {
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 1.6rem;
+        padding-top: 1rem;
+        padding-left: 1.6rem;
+        border-radius: 8px;
+        border-top: 1px solid rgba(#666, 0.25);
+        border-right: 1px solid rgba(#666, 0.25);
+        border-bottom: 1px solid rgba(#666, 0.25);
+        border-left: 3px solid rgba(#666, 0.25);
+
+        .author--avatar {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+    }
   }
 }

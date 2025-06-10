@@ -63,6 +63,9 @@ p {
 .comment .author--name {
   font-weight: 500;
 }
+.comment p {
+  margin-bottom: 0.8rem;
+}
 
 nav {
   position: fixed;
@@ -238,6 +241,59 @@ nav .navbar__menu-item a.active {
 #post .comment-section {
   padding: 1.6rem 1.6rem 0.8rem;
 }
+#post .comment-section .comment,
+#post .comment-section .reply {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.6rem;
+  padding: 1.6rem 1.6rem 0;
+  border-radius: 8px;
+  border-top: 1px solid rgba(147, 112, 219, 0.25);
+  border-right: 1px solid rgba(147, 112, 219, 0.25);
+  border-bottom: 1px solid rgba(147, 112, 219, 0.25);
+  border-left: 3px solid rgba(147, 112, 219, 0.25);
+}
+#post .comment-section .comment__author,
+#post .comment-section .reply__author {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+#post .comment-section .comment__author .author--avatar,
+#post .comment-section .reply__author .author--avatar {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 0.4rem;
+  border-radius: 50%;
+  background-color: pink;
+}
+#post .comment-section .comment__body,
+#post .comment-section .reply__body {
+  margin-bottom: 1.6rem;
+}
+#post .comment-section .comment__body:last-child,
+#post .comment-section .reply__body:last-child {
+  margin-bottom: 0;
+}
+#post .comment-section .comment__reply,
+#post .comment-section .reply__reply {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.6rem;
+  padding-top: 1rem;
+  padding-left: 1.6rem;
+  border-radius: 8px;
+  border-top: 1px solid rgba(102, 102, 102, 0.25);
+  border-right: 1px solid rgba(102, 102, 102, 0.25);
+  border-bottom: 1px solid rgba(102, 102, 102, 0.25);
+  border-left: 3px solid rgba(102, 102, 102, 0.25);
+}
+#post .comment-section .comment__reply .author--avatar,
+#post .comment-section .reply__reply .author--avatar {
+  width: 3rem;
+  height: 3rem;
+}
 
 form {
   font-family: inherit;
@@ -253,6 +309,7 @@ input,
 textarea {
   font-family: inherit;
   font-size: inherit;
+  outline: none;
 }
 
 textarea {
@@ -264,27 +321,6 @@ textarea {
 
 .comment-section label {
   display: none;
-}
-.comment-section .comment {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.6rem;
-  padding-left: 1.6rem;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-left: 3px solid red;
-}
-.comment-section .comment__author {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  margin-bottom: 0.8rem;
-}
-.comment-section .comment__author .author--avatar {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  background-color: pink;
 }
 
 /*# sourceMappingURL=app.css.map */
