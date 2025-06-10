@@ -4,7 +4,7 @@
   align-items: center;
   gap: 3.2rem;
 
-  margin: 3.2rem 0;
+  margin-bottom: 3.2rem;
   padding: 3.2rem;
   background-color: #fff;
 
@@ -77,7 +77,6 @@
 
   &__body {
     position: relative;
-    padding-bottom: 1.6rem;
 
     &::after {
       content: "";
@@ -110,6 +109,11 @@
     }
   }
 
+  &__date-stats {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &:hover {
     .post__image {
       img {
@@ -121,5 +125,23 @@
 
   a {
     display: block;
+  }
+}
+
+.single-post {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  padding: 3.2rem;
+  background-color: #fff;
+
+  &:hover {
+    .post__image {
+      img {
+        transform: scale(1.05);
+        filter: grayscale(0.5);
+      }
+    }
   }
 }

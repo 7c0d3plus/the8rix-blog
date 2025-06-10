@@ -1,7 +1,9 @@
 h1,
 h2,
 h3 {
+  margin-bottom: 1.6rem;
   font-weight: 500;
+  line-height: 1.5;
 }
 
 h2 {
@@ -10,6 +12,10 @@ h2 {
 
 h3 {
   //font-size: 1.9rem;
+}
+
+p {
+  margin-bottom: 1.6rem;
 }
 
 .post {
@@ -27,5 +33,8 @@ h3 {
   &__category {
     font-weight: 400;
     color: #fff;
+  }
+
+  &__body p {
   }
 }
