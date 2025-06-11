@@ -376,6 +376,7 @@ nav .navbar__menu-item a.active {
   gap: 0.8rem;
   padding: 3.2rem;
   background-color: #f9f9f9;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=app.css.map */
