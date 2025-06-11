@@ -1,0 +1,28 @@
+#contact {
+  display: flex;
+
+  margin-bottom: 3.2rem;
+
+  &__info,
+  &__form {
+    padding: 2.4rem 3.2rem 3.2rem;
+    background-color: #fff;
+  }
+
+  .info-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.8rem;
+
+      padding: 3.2rem;
+      background-color: #f9f9f9;
+    }
+  }
+}
