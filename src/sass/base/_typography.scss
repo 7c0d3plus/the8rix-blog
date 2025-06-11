@@ -8,6 +8,11 @@ h3 {
 
 h1 {
   font-size: 3.2rem;
+
+  &.intro {
+    font-size: 4.8rem;
+    text-transform: uppercase;
+  }
 }
 
 h2 {
@@ -24,7 +29,7 @@ p {
 
 .post {
   &__title {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   &__image,
@@ -37,9 +42,6 @@ p {
   &__category {
     font-weight: 400;
     color: #fff;
-  }
-
-  &__body p {
   }
 }
 

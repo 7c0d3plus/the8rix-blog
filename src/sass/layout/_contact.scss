@@ -5,13 +5,15 @@
 
   &__info,
   &__form {
+    width: 50%;
     padding: 2.4rem 3.2rem 3.2rem;
     background-color: #fff;
   }
 
   .info-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 3.2rem;
 
     .card {
@@ -21,9 +23,15 @@
       align-items: center;
       gap: 0.8rem;
 
+      width: 19rem;
       padding: 3.2rem;
-      background-color: #f9f9f9;
+      background-color: #f6f3ff;
       cursor: pointer;
+      transition: 0.2s all ease-in;
+
+      &:hover {
+        background-color: #f0ecff;
+      }
     }
   }
 }
