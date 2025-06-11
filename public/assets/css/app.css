@@ -300,8 +300,8 @@ form {
 }
 
 label {
-  display: block;
-  margin-bottom: 1.6rem;
+  display: none;
+  margin-bottom: 0.8rem;
   font-weight: 500;
 }
 
@@ -317,10 +317,6 @@ textarea {
   height: 16rem;
   padding: 1.6rem;
   resize: none;
-}
-
-.comment-section label {
-  display: none;
 }
 
 /*# sourceMappingURL=app.css.map */
