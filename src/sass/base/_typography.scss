@@ -1,0 +1,55 @@
+h1,
+h2,
+h3 {
+  margin-bottom: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 3.2rem;
+
+  &.intro {
+    //text-transform: uppercase;
+  }
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 1.6rem;
+}
+
+.post {
+  &__title {
+    font-size: 2.4rem;
+  }
+
+  &__image,
+  &__date,
+  &__stats {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  &__category {
+    font-weight: 400;
+    color: #fff;
+  }
+}
+
+.comment {
+  .author--name {
+    font-weight: 500;
+  }
+
+  p {
+    margin-bottom: 0.8rem;
+  }
+}
