@@ -39,3 +39,24 @@ ul {
     list-style: none;
   }
 }
+
+code {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.6rem;
+  color: #868181;
+  background-color: #000;
+}
+
+span {
+  color: #e5dada;
+}
+
+var {
+  color: #cc8bcc;
+}
+
+.str {
+  color: #deba78;
+}
